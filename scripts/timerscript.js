@@ -1,5 +1,5 @@
 let date_of_timer_ends=location.href.slice((location.href.length-13), (location.href.length));
-let rick_gif='<iframe style="display: inline-block;"  src="https://gifer.com/embed/Jup" width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>'
+let rick_gif='<iframe src="https://gifer.com/embed/Jup" width="100%" height="80%" frameBorder="0" allowFullScreen></iframe>'
 function getCookie(name) {
   let matches = document.cookie.match(new RegExp(
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -23,7 +23,7 @@ function counts (){
     console.log('ab')
     Array.from(document.getElementsByClassName('board_element')).forEach(function(element){element.style= "color: red";console.log('nb')});
   }
-  if(time_until_timer_ends<=0){document.getElementById("containertimer").innerHTML=rick_gif}
+  if(time_until_timer_ends<=0){document.getElementById("containertimer").innerHTML="<h2>Timer has expired!</h2>"+rick_gif}
 
   
   };

@@ -7,6 +7,12 @@
     margin-right: auto;
 }
 
+#containertimer{
+    max-width: 90% ;
+    max-height: 90% ;
+    font-family: 'Anton', sans-serif;  
+}
+
 html, body{
     height: 100%;
     text-align: center;
@@ -91,4 +97,11 @@ body:before {
 .board_element{
     width: 100px;
     font-size: 40px;
+}
+
+
+iframe{
+    display: inline-block;
+    border: 5px solid   #61755cc7;   
+
 }
