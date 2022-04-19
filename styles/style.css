@@ -1,0 +1,94 @@
+.container{
+    height: 600px;
+    width: 800px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body{
+    height: 100%;
+    text-align: center;
+}
+
+body{
+    background-color: #d2ccb1;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%2373926c' fill-opacity='0.34' fill-rule='evenodd'/%3E%3C/svg%3E");}
+
+body:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+
+.containertimer:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
+
+.board{
+    margin-top: 22%;
+    display: inline-block;
+   
+   
+}
+
+.floated_icon{
+    width: 40px; 
+    height: 40px; 
+    background-size: 40px 40px;  
+    background-image: url("../pictures/question.png");
+    background-color: rgba(28,28,28,0);
+    border: none;
+    float: right;
+}
+
+#date, .board_element{
+    display: inline-block;
+    margin: 5px;
+    background-color: #D2CCB1;
+    border: 5px solid   #61755cc7;
+    border-radius: 22px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;   
+}
+
+#date{
+    width: 500px;
+    font-size: 40px;
+}
+
+#preview{
+    vertical-align: top;
+    border: 5px solid   #61755cc7;
+    border-radius: 0px 22px 22px 0px; 
+    display: inline-block;
+    margin: 5px 5px 0px -5px;
+    background-color: #D2CCB1;
+    max-width: 10%;
+}
+
+#output{
+    vertical-align: top;
+    max-width: 80%;
+    display: inline-block;
+    margin: 5px -5px 0px 5px;;
+    background-color: #D2CCB1;
+    border: 5px solid   #61755cc7;
+    border-radius: 22px 0px 0px 22px; 
+    font-family: 'Anton', sans-serif; 
+    overflow: scroll;
+    width: 455px;
+    font-size: 16px;
+    height: 38px;
+}
+
+.board_element{
+    width: 100px;
+    font-size: 40px;
+}
