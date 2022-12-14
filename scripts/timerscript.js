@@ -20,8 +20,8 @@ function counts (){
   document.getElementById("minutes").innerText=minutes_until_timer_ends+" m";
   document.getElementById("seconds").innerText=seconds_until_timer_ends+" s";
   if(time_until_timer_ends<=30000){
-    console.log('ab')
-    Array.from(document.getElementsByClassName('board_element')).forEach(function(element){element.style= "color: red";console.log('nb')});
+
+    Array.from(document.getElementsByClassName('board_element')).forEach(function(element){element.style= "color: red"});
   }
   if(time_until_timer_ends<=0){document.getElementById("containertimer").innerHTML="<h2>Timer has expired!</h2>"+rick_gif}
 
